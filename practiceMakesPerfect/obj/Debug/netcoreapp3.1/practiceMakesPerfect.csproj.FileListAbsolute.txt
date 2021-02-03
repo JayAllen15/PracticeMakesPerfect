@@ -1,0 +1,12 @@
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/bin/Debug/netcoreapp3.1/practiceMakesPerfect.deps.json
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/bin/Debug/netcoreapp3.1/practiceMakesPerfect.runtimeconfig.json
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/bin/Debug/netcoreapp3.1/practiceMakesPerfect.runtimeconfig.dev.json
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/bin/Debug/netcoreapp3.1/practiceMakesPerfect.dll
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/bin/Debug/netcoreapp3.1/practiceMakesPerfect.pdb
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.csprojAssemblyReference.cache
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.csproj.CoreCompileInputs.cache
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.AssemblyInfoInputs.cache
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.AssemblyInfo.cs
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.dll
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.pdb
+/Users/a40/Projects/practiceMakesPerfect/practiceMakesPerfect/obj/Debug/netcoreapp3.1/practiceMakesPerfect.genruntimeconfig.cache

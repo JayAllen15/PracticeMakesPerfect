@@ -1,0 +1,146 @@
+﻿using System;
+namespace practiceMakesPerfect.Lesson
+{
+ public class C_Methods
+ {
+     public C_Methods()
+     {
+
+ ***************************************************************************************
+ ***                          MULTIPLY 2 NUMBER METHOD                               ***
+ ***************************************************************************************
+
+       public static void Multiply(int number1, int number2,)
+       {
+           Multiply(4,5);
+           Console.WriteLine(number1 * number2);
+
+       }
+       CREATED A METHOD FOR USER TO MULTIPLY ANY 2 NUMBERS OF THERE CHOICE
+       THE CONCOLE WILL MULTIPLY THE 2 NUMBERS TOGETHER AND PRINT ANSWER
+       IN THE WRITELINE.
+
+       1. PUBLIC = ACCESS MODIFIER MEANS CAN BE ACCESSED OUTSIDE THE CLASS
+       2. STATIC = ALLOWS US TO CALL METHOD OR VERIBAL BY ITS NAME ONLY
+       3. VOID   = RETURN TYPE, VOID RETURN TYPE MEANS IT WILL RETURN NOTHING
+                   THIS CAN BE REPLACED BY ANY DATA TYPE IF WE WANT TO RETURN
+                   ANYTHING LIKE A STRING,INT OR BOOL.
+       4. MULTIPLY = WHAT WE HAVE NAMED THE METHOD, THIS NAME WILL HAVE TO
+                     BE USED IN THE MAIN TO INIALISE THE WHOLE METHOD
+                     IF WE TAKE THE {MULTIPLY(4,5)} AND ADD IT TO THE MAIN
+                     THE 4 AND THE 5 BECOME OUR NUMBER1 AND NUMBER2
+       5.(     ) = THE BODY, WHATEVER IS IN THE BODY IS WHAT WE NEED EXECUTED
+                   EXAPMPLE: INT NUMBER1 AND INT NUMBER2 IS WHAT WE ARE WANTING
+                   TO KNOW.      
+       6. BY PUTTING NUMBER1 * NUMBER2 IN THE CONCOLE.WRITELINE WE ARE TELLING
+          THE COMPUTER TO MULTIPLY NUMBER1 WITH NUMBER2 WITH IS 4*5
+          AND PRINT ANSWER.
+
+
+
+ ***************************************************************************************
+ ***                               RANDOM NUMBER METHOD                              ***
+ ***************************************************************************************
+
+        public static void RandomNumber()
+        {           
+            TimesTables();
+            TimesTablesAnswers();
+            var random = new Random();
+            var randomNumber = random.Next(0, 145);
+            Console.Write(_sums[randomNumber] + " = ");
+            var userAnswer = Console.ReadLine();
+            if (userAnswer == _answers[randomNumber])
+            {
+                _finalScore++;
+                Console.WriteLine($"CORRECT \n{_answers[randomNumber]}");
+            }
+            else
+            {              
+                Console.WriteLine($"WRONG \n{_answers[randomNumber]}");
+            }
+         }  
+        
+*****************************************************************************************
+***                5 EXAMPLES OF METHODS AND MESSAGE OVERLOADING                      ***
+*****************************************************************************************
+
+   1)  -   METHOD USING 3 NUMBERS TO MULTPLY TOGETHER AND PRINT ANSWER.
+
+           public static void Multiply(int number1,int number2,int number3)
+           {
+            Multiply(2, 5, 4);
+            Console.WriteLine(number1 * number2 * number3);
+           }
+   2)  -   INT METHOD OVERLOADING SAME NAME BUT FOUR DIFFERENT NUMBERS TO MULTIPLY INSTEAD OF 3
+
+           public static void Multiply(int number1,int number2,int number3,int number4)
+           {
+            Multiply(4, 8, 2, 9);
+            Console.WriteLine(number1 + number2 * number3 + number4);
+           }
+
+   3)  -   METHOD CREATED WITH A STRING FOR USER TO INPUT FIRSTNAME
+
+           public static void Name(string firstname)
+           {
+            Name("Nortz");
+            Console.WriteLine(firstname);
+           }
+
+   4)  -   METHOD OVERLOAD WITH TWO STRINGS FOR FIRST AND LAST NAME
+
+           public static void Name(string firstname,string lastname)
+           {
+            Name("Fort", "Nort");
+            Console.WriteLine(firstname + "\n"  + lastname);
+           }
+
+   5)  -   BOOL STATEMENT METHOND THAT ALLOWS USER TO INPUT TRUE OR FALSE
+
+
+           public static void RightOrWrong (bool trueORFalse)
+           {
+            RightOrWrong(false);
+            Console.WriteLine(trueORFalse);           
+           }
+      
+ METHOD SIGNITURE     -  ACCESS MODIFIER,RETURN TYPE,METHOD NAME,ARGS BRACKET,BODY
+                             PUBLIC          VOID        NAMES        ( )       {}
+                         IN ORDER TO MAKE A METHOD YOU NEED A METHOD SIGNITURE TO INVOKE IT AND THEN THE METHOD GOES
+                         INBETWEEN THE BODY,
+                         -STARTS WITH THE ACCESS MODIFIER THIS DETERMINES WHERE THE METHOD CAN BE USED,IF SET TO PUBLIC IT
+                         CAN BE USED OUTSIDE OF THE CLASS IT WAS ORIGINALLY CREATED IN.IF SET TO PRIVATE IT CAN ONLY BE USED
+                         INSIDE OF THE CLASS IT WAS CREATED IN
+                         -THEN COMES RETURN TYPE,THIS IS WHAT DATA TYPE YOU WANT TO BE RETURNED,IF YOU DO NOT NEED ANYTHING
+                         RETURNED INTO YOUR METHOD THEN THE RETURN TYPE CAN BE SET AT VOID,THAT MEANS NULL RETURN
+                         IF YOU DO NEED A RETURN YOU CAN SET IT TO A DATA TYPE LIKE A STRING OR INT ETC
+                         -AFTER THE DATA TYPE COMES THE NAME OF YOUR METHOD,THE NAME ALWAYS BEGINS WITH A CAPITAL LETTER,
+                         METHOD NAME IS WHAT WE TYPE WHEN WE WANT TO USE THE ACCESS THE METHOD.
+                         -()THEN COMES THE ARGS BRACKET,THIS IS WHAT WE ARE TELLING THE METHOD TO DO, IF LEFT EMPTY THAT
+                         ALLOWS THE USER OF THE METHOD TO CALL SOMETHING INSIDE THE BRACKETS,IF SOMETHING IS ALREADY INSIDE
+                         THE BRACKETS THEN THE METHOD HAS BEEN DESIGNED TO BE USED IN THAT WAY
+                         -LASTLY IT IS FINISHED WITH THE BODY, THE OPEN BODY GOES UNDERNEATH AND THE ACCES MODIFIER
+                          THE METHOD SITS INSIDE THE BODY AND THEN ITS CLOSED BODY BRACKET.
+        
+
+ Methods & Functions: -  A PIECE OF CODE THAT WE PACKAGE TOGETHER AND USE AS A METHOD FOR A FUNCTUALITY THAT WE CAN USE
+                         MORE THEN 1 TIME, WE WILL USE A METHOD INSTEAD OF COPYING AND PASTING CODE, THE METHOD IS CREATED
+                         MAINLY WITH THE PURPOSE THAT WE CAN RE-USE IT INSTEAD OF REWRITING THE SAME CODE OVER AND OVER AGAIN
+                         OR COPY AND PASTING AGAIN AND AGAIN. 
+
+    Method Overload:  -  WHEN WE HAVE THE SAME METHOD RETURN TYPE, SAME METHOD NAME BUT DIFFERENT ARGUMENTS IN THE PARAMETER
+                         EXAMPLE: (STRING,STRING) (STRING), THIS WOULD BE OVERLOADING BECAUSE THEY WOULD HAVE THE SAME NAME
+                         SAME METHOD BUT DIFFERENT ARGUMENTS IN THE PARAMETER AS ONE WOULD HAVE 2 STRINGS AND THE OTHER HAS 1
+                          
+
+
+
+
+
+
+
+
+     }
+ }
+}
