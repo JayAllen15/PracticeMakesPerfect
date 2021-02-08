@@ -1,67 +1,171 @@
 ﻿using System;
+using practiceMakesPerfect.Lesson;
+using practiceMakesPerfect.PracticeProjects.DoctorsApp;
 
 namespace practiceMakesPerfect
 {
     class Program
     {
+       
+       static void Main(string[] args)
+       {
+            WellBeingCheck newCheck = new WellBeingCheck();
 
-        static void Main(string[] args)
-        {
+            Doctors dr1 = new Doctors();
+            dr1.firstName = "Dr Harry";
+            dr1.lastName = "Wright";
+            dr1.sex = "Male";
+            dr1.age = 36;
 
-            for (int i = 1; i <= 10; i++)
-            {
+            Doctors dr2 = new Doctors();
+            dr2.firstName = "Dr Sally";
+            dr2.lastName = "Hilson";
+            dr2.sex = "Female";
+            dr2.age = 55;
 
-                Console.WriteLine(i);
+            Doctors dr3 = new Doctors();
+            dr3.firstName = "Dr Ralph";
+            dr3.lastName = "Davis";
+            dr3.sex = "Male";
+            dr3.age = 60;
+
+            Doctors dr4 = new Doctors();
+            dr3.firstName = "Dr Alice";
+            dr3.lastName = "Daley";
+            dr3.sex = "Female";
+            dr3.age = 59;
+
+            Doctors dr5 = new Doctors();
+            dr5.firstName = "Dr Ralph";
+            dr5.lastName = "Davis";
+            dr5.sex = "Male";
+            dr5.age = 60;
+
+            Patiant patiant1 = new Patiant();
+            patiant1.firstname = "Tony";
+            patiant1.lastname = "Harrison";
+            patiant1.dob = "07/07/75" ;           
+            patiant1.weight = 83;
+            patiant1.height = 6;
+            patiant1.bmi = newCheck.Bmi(patiant1.weight,patiant1.height);
+            patiant1.doctor = dr1;
+
+            Patiant patiant2 = new Patiant();
+            patiant2.firstname = "Alex";
+            patiant2.lastname = "Harrison";
+            patiant2.dob = "01/03/80";           
+            patiant2.weight = 99;
+            patiant2.height = 6;
+            patiant2.bmi = newCheck.Bmi(patiant2.weight, patiant2.height);
+            patiant2.doctor = dr1;
+
+            Patiant patiant3 = new Patiant();
+            patiant3.firstname = "Lucy";
+            patiant3.lastname = "Lashley";
+            patiant3.dob = "22/12/79";
+            patiant3.weight = 60;
+            patiant3.height = 5;
+            patiant3.bmi = newCheck.Bmi(patiant3.weight, patiant3.height);
+            patiant3.doctor = dr2;
+
+            Patiant patiant4 = new Patiant();
+            patiant4.firstname = "Tracy";
+            patiant4.lastname = "Lashley";
+            patiant4.dob = "22/12/79";
+            patiant4.weight = 67;
+            patiant4.height = 5;
+            patiant4.bmi = newCheck.Bmi(patiant4.weight, patiant4.height);
+            patiant4.doctor = dr2;
+
+            Patiant patiant5 = new Patiant();
+            patiant5.firstname = "Derrick";
+            patiant5.lastname = "Armstrong";
+            patiant5.dob = "09/11/88";
+            patiant5.weight = 102;
+            patiant5.height = 5;
+            patiant5.bmi = newCheck.Bmi(patiant5.weight, patiant5.height);
+            patiant5.doctor = dr3;
+
+            Patiant patiant6 = new Patiant();
+            patiant6.firstname = "Sarah";
+            patiant6.lastname = "Prince";
+            patiant6.dob = "05/05/69";
+            patiant6.weight = 71;
+            patiant6.height = 5;
+            patiant6.bmi = newCheck.Bmi(patiant6.weight, patiant6.height);
+            patiant6.doctor = dr3;
+
+            Patiant patiant7 = new Patiant();
+            patiant7.firstname = "Lee";
+            patiant7.lastname = "Crow";
+            patiant7.dob = "28/08/90";
+            patiant7.weight = 86;
+            patiant7.height = 6;
+            patiant7.bmi = newCheck.Bmi(patiant7.weight, patiant7.height);
+            patiant7.doctor = dr4;
+
+            Patiant patiant8 = new Patiant();
+            patiant8.firstname = "Dean";
+            patiant8.lastname = "Ali";
+            patiant8.dob = "02/03/77";
+            patiant8.weight = 105;
+            patiant8.height = 6;
+            patiant8.bmi = newCheck.Bmi(patiant8.weight, patiant8.height);
+            patiant8.doctor = dr4;
+
+            Patiant patiant9 = new Patiant();
+            patiant9.firstname = "Lin";
+            patiant9.lastname = "Hoy";
+            patiant9.dob = "01/12/85";
+            patiant9.weight = 62;
+            patiant9.height = 5;
+            patiant9.bmi = newCheck.Bmi(patiant9.weight, patiant9.height);
+            patiant9.doctor = dr5;
+
+            Patiant patiant10 = new Patiant();
+            patiant10.firstname = "Derrick";
+            patiant10.lastname = "Whiteman";
+            patiant10.dob = "15/07/82";
+            patiant10.weight = 63;
+            patiant10.height = 5;
+            patiant10.bmi = newCheck.Bmi(patiant10.weight, patiant10.height);
+            patiant10.doctor = dr5;
+
+            dr1.patiants = new Patiant[2];
+            dr1.patiants[0] = patiant1;
+            dr1.patiants[1] = patiant2;
+
+            dr2.patiants = new Patiant[2];
+            dr2.patiants[0] = patiant3;
+            dr2.patiants[1] = patiant4;
+
+            dr3.patiants = new Patiant[2];
+            dr3.patiants[0] = patiant5;
+            dr3.patiants[1] = patiant6;
+
+            dr4.patiants = new Patiant[2];
+            dr4.patiants[0] = patiant7;
+            dr4.patiants[1] = patiant8;
+
+            dr5.patiants = new Patiant[2];
+            dr5.patiants[0] = patiant9;
+            dr5.patiants[1] = patiant10;
+
+             
+
+            patiant10.PatiantDetails();
+
+            Console.WriteLine("YOUR BMI RESULT IS" +" "+ patiant10.bmi);
+
+            patiant10.BmiStatus();
+            Console.WriteLine("YOUR TEMPERATURE IS" +" "+ patiant10.TempratureStatus());
 
 
-
-                bool yes = true;
-                while (i <= 7)
-                {
-                    if(i < 5)
-                    {
-                        Console.Write("hi fool press enter");
-                        Console.ReadLine();
-                    }
-                    else if (i ==6)
-                    {
-                        Console.Write("bye fool");
-                        Console.ReadLine();
-                        break;
-                    }
-                    else
-                    {
-                        Console.Write("press enter to keep going");
-                        Console.ReadLine();
-                        yes=false;
-                    }
+        }
 
 
-
-                }
-            }
-            
-        }  
-
-        
-        
-
-            
-
-
-
-
-        
-
-
-
-
-
-        
     }
-
-    
-
+ 
 }
 
            

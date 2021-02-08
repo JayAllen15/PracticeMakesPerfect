@@ -7,5 +7,7 @@
 
   <ItemGroup>
     <Folder Include="Lesson\" />
+    <Folder Include="PracticeProjects\" />
+    <Folder Include="PracticeProjects\DoctorsApp\" />
   </ItemGroup>
 </Project>
