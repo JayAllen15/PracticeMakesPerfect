@@ -1,6 +1,7 @@
 ﻿using System;
 using practiceMakesPerfect.Lesson;
 using practiceMakesPerfect.PracticeProjects.DoctorsApp;
+using practiceMakesPerfect.PracticeProjects.MultiplicationGameApp;
 
 namespace practiceMakesPerfect
 {
@@ -9,127 +10,42 @@ namespace practiceMakesPerfect
        
        static void Main(string[] args)
        {
+            
+            PlayingWithMethods playingWithMethods1 = new PlayingWithMethods(7,17);
+            Console.WriteLine( playingWithMethods1.RandomNumber());
+
             WellBeingCheck newCheck = new WellBeingCheck();
+            Doctors dr1 = new Doctors("Dr Harry","Wright","Male",36);
+           
+            Doctors dr2 = new Doctors("Dr Sally","Hilson","Female",55);
+          
+            Doctors dr3 = new Doctors("Dr Ralph","Davies","Male",60);
+           
+            Doctors dr4 = new Doctors("Dr Alice","Daley","Female",59);
+           
+            Doctors dr5 = new Doctors("Dr Elvis","Crow","Male",60);
+           
 
-            Doctors dr1 = new Doctors();
-            dr1.firstName = "Dr Harry";
-            dr1.lastName = "Wright";
-            dr1.sex = "Male";
-            dr1.age = 36;
-
-            Doctors dr2 = new Doctors();
-            dr2.firstName = "Dr Sally";
-            dr2.lastName = "Hilson";
-            dr2.sex = "Female";
-            dr2.age = 55;
-
-            Doctors dr3 = new Doctors();
-            dr3.firstName = "Dr Ralph";
-            dr3.lastName = "Davis";
-            dr3.sex = "Male";
-            dr3.age = 60;
-
-            Doctors dr4 = new Doctors();
-            dr3.firstName = "Dr Alice";
-            dr3.lastName = "Daley";
-            dr3.sex = "Female";
-            dr3.age = 59;
-
-            Doctors dr5 = new Doctors();
-            dr5.firstName = "Dr Ralph";
-            dr5.lastName = "Davis";
-            dr5.sex = "Male";
-            dr5.age = 60;
-
-            Patiant patiant1 = new Patiant();
-            patiant1.firstname = "Tony";
-            patiant1.lastname = "Harrison";
-            patiant1.dob = "07/07/75" ;           
-            patiant1.weight = 83;
-            patiant1.height = 6;
-            patiant1.bmi = newCheck.Bmi(patiant1.weight,patiant1.height);
-            patiant1.doctor = dr1;
-
-            Patiant patiant2 = new Patiant();
-            patiant2.firstname = "Alex";
-            patiant2.lastname = "Harrison";
-            patiant2.dob = "01/03/80";           
-            patiant2.weight = 99;
-            patiant2.height = 6;
-            patiant2.bmi = newCheck.Bmi(patiant2.weight, patiant2.height);
-            patiant2.doctor = dr1;
-
-            Patiant patiant3 = new Patiant();
-            patiant3.firstname = "Lucy";
-            patiant3.lastname = "Lashley";
-            patiant3.dob = "22/12/79";
-            patiant3.weight = 60;
-            patiant3.height = 5;
-            patiant3.bmi = newCheck.Bmi(patiant3.weight, patiant3.height);
-            patiant3.doctor = dr2;
-
-            Patiant patiant4 = new Patiant();
-            patiant4.firstname = "Tracy";
-            patiant4.lastname = "Lashley";
-            patiant4.dob = "22/12/79";
-            patiant4.weight = 67;
-            patiant4.height = 5;
-            patiant4.bmi = newCheck.Bmi(patiant4.weight, patiant4.height);
-            patiant4.doctor = dr2;
-
-            Patiant patiant5 = new Patiant();
-            patiant5.firstname = "Derrick";
-            patiant5.lastname = "Armstrong";
-            patiant5.dob = "09/11/88";
-            patiant5.weight = 102;
-            patiant5.height = 5;
-            patiant5.bmi = newCheck.Bmi(patiant5.weight, patiant5.height);
-            patiant5.doctor = dr3;
-
-            Patiant patiant6 = new Patiant();
-            patiant6.firstname = "Sarah";
-            patiant6.lastname = "Prince";
-            patiant6.dob = "05/05/69";
-            patiant6.weight = 71;
-            patiant6.height = 5;
-            patiant6.bmi = newCheck.Bmi(patiant6.weight, patiant6.height);
-            patiant6.doctor = dr3;
-
-            Patiant patiant7 = new Patiant();
-            patiant7.firstname = "Lee";
-            patiant7.lastname = "Crow";
-            patiant7.dob = "28/08/90";
-            patiant7.weight = 86;
-            patiant7.height = 6;
-            patiant7.bmi = newCheck.Bmi(patiant7.weight, patiant7.height);
-            patiant7.doctor = dr4;
-
-            Patiant patiant8 = new Patiant();
-            patiant8.firstname = "Dean";
-            patiant8.lastname = "Ali";
-            patiant8.dob = "02/03/77";
-            patiant8.weight = 105;
-            patiant8.height = 6;
-            patiant8.bmi = newCheck.Bmi(patiant8.weight, patiant8.height);
-            patiant8.doctor = dr4;
-
-            Patiant patiant9 = new Patiant();
-            patiant9.firstname = "Lin";
-            patiant9.lastname = "Hoy";
-            patiant9.dob = "01/12/85";
-            patiant9.weight = 62;
-            patiant9.height = 5;
-            patiant9.bmi = newCheck.Bmi(patiant9.weight, patiant9.height);
-            patiant9.doctor = dr5;
-
-            Patiant patiant10 = new Patiant();
-            patiant10.firstname = "Derrick";
-            patiant10.lastname = "Whiteman";
-            patiant10.dob = "15/07/82";
-            patiant10.weight = 63;
-            patiant10.height = 5;
-            patiant10.bmi = newCheck.Bmi(patiant10.weight, patiant10.height);
-            patiant10.doctor = dr5;
+            Patiant patiant1 = new Patiant("Tony","Harrison","07/07/75",83,6,dr1);
+           
+            Patiant patiant2 = new Patiant("Alex","Harrison","01/03/80",99,6,dr1);
+            
+            Patiant patiant3 = new Patiant("Lucy","Lashley","22/12/79",60,5,dr2);
+           
+            Patiant patiant4 = new Patiant("Tracy","Lashley","22/12/79",67,5,dr2);
+           
+            Patiant patiant5 = new Patiant("Derrick","Armstrong","09/11/88",102,5,dr3);
+           
+            Patiant patiant6 = new Patiant("Sarah","Prince","05/05/69",71,5,dr3);
+           
+            Patiant patiant7 = new Patiant("Lee","Crow","28/08/90",86,6,dr4);
+           
+            Patiant patiant8 = new Patiant("Dean","Ali","02/03/77",105,6,dr4);
+          
+            Patiant patiant9 = new Patiant("Lin","hoy","01/12/85",93,6,dr5);
+           
+            Patiant patiant10 = new Patiant("Derrick","Whiteman","15/07/82",63,5,dr5);
+           
 
             dr1.patiants = new Patiant[2];
             dr1.patiants[0] = patiant1;
@@ -152,13 +68,17 @@ namespace practiceMakesPerfect
             dr5.patiants[1] = patiant10;
 
              
-
             patiant10.PatiantDetails();
 
-            Console.WriteLine("YOUR BMI RESULT IS" +" "+ patiant10.bmi);
+            /*
+            Sums newSums = new Sums();
+            Answers newAnswers = new Answers();
+            GameMethod newGameMethod = new GameMethod();
 
-            patiant10.BmiStatus();
-            Console.WriteLine("YOUR TEMPERATURE IS" +" "+ patiant10.TempratureStatus());
+            newGameMethod.TheGame();
+            */
+            
+
 
 
         }
@@ -612,7 +532,7 @@ namespace practiceMakesPerfect
           9. THE NEXT TIME IT GOES ROUND THE LOOP i WILL NOW START AT 1
           10. WHEN IT GETS TO THE END BECAUSE ITS STILL LESS AND NOT EQAUL TO 10
               i WHICH IS NOW 1 WILL BECOME ++ WHICH TURNS THE 1 INTO A 2
-          11. THIS LOOP WILL CONTINUE GO AROUND UNTIL i IS = TO 10 THEN IT WILL BREAK
+          11. THIS LOOP WILL CONTINUE TO GO AROUND UNTIL i IS = TO 10 THEN IT WILL BREAK
           12. THIS CODE WILL PRINT OUT 1 - 10
           */
         /*
@@ -640,7 +560,7 @@ namespace practiceMakesPerfect
        ********************************************************
        ***                   DATA TYPES                     ***
        ********************************************************           
-       char = CHAR IS A SINGAL CHARACTER ''
+       char = CHAR IS A SINGLE CHARACTER ''
               A CHAR GOES INSIDE THE SINGAL BRACKETS 'A'
        string = ANYTHING ON THE KEYPAD IS A STRING " "
                " A STRING GOES INSIDE THE SPEECH MARKS "
@@ -672,6 +592,24 @@ namespace practiceMakesPerfect
         {
             Console.WriteLine(name);
         }
+
+        1. STRING IS THE DATA TYPE WE ARE USING
+        2. [] THIS IS DECLARING AN ARRAY,
+        3. THE NAME WE ARE GIVING THE ARRAY IS NAMES
+        4. THE EQUALS SIGN IS TELLING US EXACTLY THAT,
+        5. THEN WE ARE SAYING THAT THE NAMES IN THE ARRAY IS
+           A NEW STRING
+        6. [3] THE 3 IS TELLING US THAT WE WANT 3 NAMES STORED
+           IN OUR ARRAY
+        7. THIS IS FINISHED WITH A SEMI COLON WHICH IS A C# FULLSTOP
+        8. NOW WE HAVE SET OUR ARRAY WE NEED TO USE IT
+        9. A FOREACH LOOP IS THE BEST WAY TO LOOP THROUGH AN ARRAY
+       10. FOREACH IS THE NAME OF LOOP WITH THE () BRACKETS
+       11. INSIDE THE BRACKETS WE TELL THE LOOP WHAT WE NEED IT TO DO
+       12. THE VAR IS THE DATA TYPE WE WANT TO USE
+       13. THEN WE ARE SAYING THAT WE WANT A NAME IN THE ARRAY WE CALLED NAMES
+       14. WE ARE BASICALLY SAYING WE WANT A NAME IN THE NAMES ARRY
+       15. WITH NAME IN THE CONSOLE.WRITELINE WE WILL PRINT NAME FROM THE NAMES ARRAY
         */
 
 

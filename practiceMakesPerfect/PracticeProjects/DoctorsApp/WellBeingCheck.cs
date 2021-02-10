@@ -13,21 +13,20 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
             return weight / height + height;
         }
 
-
-        public int HeartRateStatus()
+        public int Temprature()
         {
             var random = new Random();
-            var bpm = random.Next(60,100);
+            var temp = random.Next(91, 101);
+            return temp;
+        }
+
+        public int HeartRate()
+        {
+            var random = new Random();
+            var bpm = random.Next(60, 104);
             return bpm;
         }
 
-
-        public double TempratureStatus()
-        {
-            var random = new Random();
-            var Temp = random.Next(91,101);
-            return Temp;
-        }
 
     }
 }

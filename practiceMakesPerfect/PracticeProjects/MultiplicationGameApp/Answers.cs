@@ -1,10 +1,162 @@
 ﻿using System;
 namespace practiceMakesPerfect.PracticeProjects.MultiplicationGameApp
 {
+
     public class Answers
     {
         public Answers()
         {
+            _answers = new string[144];
+
+            _answers[0] = "1";
+            _answers[1] = "2";
+            _answers[2] = "3";
+            _answers[3] = "4";
+            _answers[4] = "5";
+            _answers[5] = "6";
+            _answers[6] = "7";
+            _answers[7] = "8";
+            _answers[8] = "9";
+            _answers[9] = "10";
+            _answers[10] = "11";
+            _answers[11] = "12";
+            _answers[12] = "2";
+            _answers[13] = "4";
+            _answers[14] = "6";
+            _answers[15] = "8";
+            _answers[16] = "10";
+            _answers[17] = "12";
+            _answers[18] = "14";
+            _answers[19] = "16";
+            _answers[20] = "18";
+            _answers[21] = "20";
+            _answers[22] = "22";
+            _answers[23] = "24";
+            _answers[24] = "3";
+            _answers[25] = "6";
+            _answers[26] = "9";
+            _answers[27] = "12";
+            _answers[28] = "15";
+            _answers[29] = "18";
+            _answers[30] = "21";
+            _answers[31] = "24";
+            _answers[32] = "27";
+            _answers[33] = "30";
+            _answers[34] = "33";
+            _answers[35] = "36";
+            _answers[36] = "4";
+            _answers[37] = "8";
+            _answers[38] = "12";
+            _answers[39] = "16";
+            _answers[40] = "20";
+            _answers[41] = "24";
+            _answers[42] = "28";
+            _answers[43] = "32";
+            _answers[44] = "36";
+            _answers[45] = "40";
+            _answers[46] = "44";
+            _answers[47] = "48";
+            _answers[48] = "5";
+            _answers[49] = "10";
+            _answers[50] = "15";
+            _answers[51] = "20";
+            _answers[52] = "25";
+            _answers[53] = "30";
+            _answers[54] = "35";
+            _answers[55] = "40";
+            _answers[56] = "45";
+            _answers[57] = "50";
+            _answers[58] = "55";
+            _answers[59] = "60";
+            _answers[60] = "6";
+            _answers[61] = "12";
+            _answers[62] = "18";
+            _answers[63] = "24";
+            _answers[64] = "30";
+            _answers[65] = "36";
+            _answers[66] = "42";
+            _answers[67] = "48";
+            _answers[68] = "54";
+            _answers[69] = "60";
+            _answers[70] = "66";
+            _answers[71] = "72";
+            _answers[72] = "7";
+            _answers[73] = "14";
+            _answers[74] = "21";
+            _answers[75] = "28";
+            _answers[76] = "35";
+            _answers[77] = "42";
+            _answers[78] = "49";
+            _answers[79] = "56";
+            _answers[80] = "63";
+            _answers[81] = "70";
+            _answers[82] = "77";
+            _answers[83] = "84";
+            _answers[84] = "8";
+            _answers[85] = "16";
+            _answers[86] = "24";
+            _answers[87] = "32";
+            _answers[88] = "40";
+            _answers[89] = "48";
+            _answers[90] = "56";
+            _answers[91] = "64";
+            _answers[92] = "72";
+            _answers[93] = "80";
+            _answers[94] = "88";
+            _answers[95] = "96";
+            _answers[96] = "9";
+            _answers[97] = "18";
+            _answers[98] = "27";
+            _answers[99] = "36";
+            _answers[100] = "45";
+            _answers[101] = "54";
+            _answers[102] = "63";
+            _answers[103] = "72";
+            _answers[104] = "81";
+            _answers[105] = "90";
+            _answers[106] = "99";
+            _answers[107] = "108";
+            _answers[108] = "10";
+            _answers[109] = "20";
+            _answers[110] = "30";
+            _answers[111] = "40";
+            _answers[112] = "50";
+            _answers[113] = "60";
+            _answers[114] = "70";
+            _answers[115] = "80";
+            _answers[116] = "90";
+            _answers[117] = "100";
+            _answers[118] = "110";
+            _answers[119] = "120";
+            _answers[120] = "11";
+            _answers[121] = "22";
+            _answers[122] = "33";
+            _answers[123] = "44";
+            _answers[124] = "55";
+            _answers[125] = "66";
+            _answers[126] = "77";
+            _answers[127] = "88";
+            _answers[128] = "99";
+            _answers[129] = "110";
+            _answers[130] = "121";
+            _answers[131] = "132";
+            _answers[132] = "12";
+            _answers[133] = "24";
+            _answers[134] = "36";
+            _answers[135] = "48";
+            _answers[136] = "60";
+            _answers[137] = "72";
+            _answers[138] = "84";
+            _answers[139] = "96";
+            _answers[140] = "108";
+            _answers[141] = "120";
+            _answers[142] = "132";
+            _answers[143] = "144";
+        }
+        public string[] _answers;
+        public void TimesTablesAnswers()
+        {
+            
         }
     }
 }
