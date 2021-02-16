@@ -153,10 +153,9 @@ namespace practiceMakesPerfect.PracticeProjects.MultiplicationGameApp
             _answers[142] = "132";
             _answers[143] = "144";
         }
-        public string[] _answers;
-        public void TimesTablesAnswers()
-        {
-            
-        }
+        private string[] _answers;
+
+        public string[] Answers1 { get { return _answers; } }
+        
     }
 }

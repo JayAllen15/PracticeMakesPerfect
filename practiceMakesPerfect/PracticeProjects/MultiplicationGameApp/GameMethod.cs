@@ -3,7 +3,7 @@ namespace practiceMakesPerfect.PracticeProjects.MultiplicationGameApp
 {
     public class GameMethod
     {
-        public static int _finalScore = 0;
+        private static int _finalScore = 0;       
         public void RandomTimestable()
         {
             
@@ -13,17 +13,17 @@ namespace practiceMakesPerfect.PracticeProjects.MultiplicationGameApp
             //newAnswers.TimesTablesAnswers();
             var random = new Random();
             var randomSum = random.Next(0, 144);
-            Console.Write(newSums._sums[randomSum] + " = ");
+            Console.Write(newSums.SumsQuestions[randomSum] + " = ");
             var userAnswer = Console.ReadLine();
-            if (userAnswer == newAnswers._answers[randomSum])
+            if (userAnswer == newAnswers.Answers1[randomSum])
             {
                 
-                Console.WriteLine($"CORRECT \n{newAnswers._answers[randomSum]}");
+                Console.WriteLine($"CORRECT \n{newAnswers.Answers1[randomSum]}");
                 _finalScore++;
             }
             else
             {
-                Console.WriteLine($"WRONG \n{newAnswers._answers[randomSum]}");
+                Console.WriteLine($"WRONG \n{newAnswers.Answers1[randomSum]}");
             }
         }
 

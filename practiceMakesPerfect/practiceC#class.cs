@@ -11,12 +11,11 @@ namespace practiceMakesPerfect
        static void Main(string[] args)
        {
             
-            PlayingWithMethods playingWithMethods1 = new PlayingWithMethods(7,17);
-            Console.WriteLine( playingWithMethods1.RandomNumber());
-
+            /*
             WellBeingCheck newCheck = new WellBeingCheck();
+
             Doctors dr1 = new Doctors("Dr Harry","Wright","Male",36);
-           
+                      
             Doctors dr2 = new Doctors("Dr Sally","Hilson","Female",55);
           
             Doctors dr3 = new Doctors("Dr Ralph","Davies","Male",60);
@@ -68,18 +67,22 @@ namespace practiceMakesPerfect
             dr5.patiants[1] = patiant10;
 
              
-            patiant10.PatiantDetails();
+            
+            patiant1.PatiantDetails();
+            patiant1.BmiStatus();
+            
+            patiant1.TempratureStatus();
 
-            /*
+            patiant1.HeartRateStatus();
+            */
+                     
             Sums newSums = new Sums();
             Answers newAnswers = new Answers();
             GameMethod newGameMethod = new GameMethod();
-
             newGameMethod.TheGame();
-            */
             
 
-
+           
 
         }
 

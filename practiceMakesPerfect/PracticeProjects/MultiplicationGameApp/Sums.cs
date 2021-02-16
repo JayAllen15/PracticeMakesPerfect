@@ -156,14 +156,10 @@ namespace practiceMakesPerfect.PracticeProjects.MultiplicationGameApp
             _sums[143] = "12 x 12";
            
         }
-        public string[] _sums;
-        public void TimesTables()
-        {
+        private string[] _sums;
 
-             
-
-           }
-    }     
+        public string[] SumsQuestions { get {return _sums;} }  
+    }    
 }       
 
 

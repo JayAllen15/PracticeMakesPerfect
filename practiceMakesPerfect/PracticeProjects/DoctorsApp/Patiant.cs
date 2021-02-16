@@ -5,22 +5,22 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
     {
         public Patiant(string firstName,string lastName,string dob,int weight,int height,Doctors doctor)
         {
-            _firstName = firstName;
-            _lastName = lastName;
-            _dob = dob;         
-            _weight = weight;
-            _height = height;          
-            _doctor = doctor;
+            FirstName = firstName;
+            LastName = lastName;
+            Dob = dob;         
+            Weight = weight;
+            Height = height;          
+            Doctor = doctor;
         }
-        public string _firstName;
-        public string _lastName;
-        public string _dob;       
-        public int _weight;
-        public int _height;
-        public int _bmi;
-        public int _temprature;
-        public int _heartRate;
-        public Doctors _doctor;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Dob { get; set; }      
+        public int Weight { get; set; }
+        public int Height { get; set; }
+        public int Bmi { get; set; }
+        public int Temprature { get; set; }
+        public int HeartRate { get; set; }
+        public Doctors Doctor { get; set; }
 
 
 
@@ -28,27 +28,27 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
         {
 
 
-            Console.WriteLine(_firstName + "\n" + _lastName + "\n" + _dob + "\n" + _weight + "\n"
-                              + _height + "\n" + _doctor._firstName + " " + _doctor._lastName);
+            Console.WriteLine(FirstName + "\n" + LastName + "\n" + Dob + "\n" + Weight + "\n"
+                              + Height + "\n" + Doctor.FirstName + " " + Doctor.LastName);
         }
 
 
         public void BmiStatus()
         {
 
-            if (_bmi < 18)
+            if (Bmi < 18)
             {
                 Console.WriteLine("YOU ARE UNDERWEIGHT AS YOUR BMI IS BELOW 18");
             }
-            else if (_bmi > 18 && _bmi < 24)
+            else if (Bmi > 18 && Bmi < 24)
             {
                 Console.WriteLine("YOUR WEIGHT IS NORMAL AS ITS BETWEEN 18 AND 24");
             }
-            else if (_bmi > 24.1 && _bmi < 29)
+            else if (Bmi > 24.1 && Bmi < 29)
             {
                 Console.WriteLine("YOUR OVERWEIGHT AS YOUR WEIGHT IS ABOVE 24 TRY GETTING IT BELOW 18 AND 24");
             }
-            else if (_bmi > 29.1 && _bmi < 34)
+            else if (Bmi > 29.1 && Bmi < 34)
             {
                 Console.WriteLine("YOUR WEIGHT IS CLASSED AS OBEASE YOU REALLY NEED TO GET IT DOWN, A NORMAL WEIGHT IS BETWEEN 18 AND 24");
             }
@@ -61,15 +61,15 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
        
         public void TempratureStatus()
         {
-            if(_temprature < 94)
+            if(Temprature < 94)
             {
                 Console.WriteLine("YOUR TEMPRATURE IS OK BUT IF IT DROPS ANYMORE WE MIGHT HAVE TO TAKE SOME TESTS");
             }
-            else if(_temprature >= 94 && _temprature <= 98 )
+            else if(Temprature >= 94 && Temprature <= 98 )
             {
                 Console.WriteLine("YOUR TEMPRATURE IS NORMAL");
             }
-            else if(_temprature >= 99)
+            else if(Temprature >= 99)
             {
                 Console.WriteLine("YOU HAVE A HIGH TEMPRATURE IF ITS STILL HIGH IN A COUPLE DAYS COME BACK AND SEE ME");
             }
@@ -77,15 +77,15 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
 
         public void HeartRateStatus()
         {
-            if(_heartRate <= 70)
+            if(HeartRate <= 70)
             {
                 Console.WriteLine("YOUR HEARTRATE IS BELOW 70 WHICH IS A VERY GOOD RATE");
             }
-            else if(_heartRate > 70 && _heartRate < 90)
+            else if(HeartRate > 70 && HeartRate < 90)
             {
                 Console.WriteLine("YOU HAVE A NORMAL HEARTRATE");
             }
-            else if(_heartRate >= 90 && _heartRate < 98)
+            else if(HeartRate >= 90 && HeartRate < 98)
             {
                 Console.WriteLine("YOUR HEARTRATE IS ON THE HIGHSIDE I WOULD RECOMEND MORE EXERCISE");
             }

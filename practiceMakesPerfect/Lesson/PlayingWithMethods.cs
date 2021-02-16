@@ -4,25 +4,36 @@ namespace practiceMakesPerfect.Lesson
 {
     public class PlayingWithMethods
     {
-        int _min;
-        int _max;
-
-        public PlayingWithMethods(int min, int max)
+        int _number1 ;
+        int _number2 ;
+        string _name ;
+        public PlayingWithMethods(int number1, int number2)
         {
-             _min = min;
-            _max = max;
+            _number1 = number1;
+            _number2 = number2;
         }
 
+        public PlayingWithMethods(int number1, int number2, string name)
+        {
+            _number1 = number1;
+            _number2 = number2;
+            _name = name;
+
+        }
         public int RandomNumber()
         {
             var random = new Random();
-            var number = random.Next(_min, _max);
+            var number = random.Next(_number1, _number2);
 
             return number;
 
         }
 
+        public void NameAndNumber()
+        {
 
+            Console.WriteLine();
+        }
 
 
 
