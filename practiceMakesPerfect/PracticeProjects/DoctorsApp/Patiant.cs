@@ -22,8 +22,6 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
         public int HeartRate { get; set; }
         public Doctors Doctor { get; set; }
 
-
-
         public void PatiantDetails()
         {
 
@@ -32,10 +30,8 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
                               + Height + "\n" + Doctor.FirstName + " " + Doctor.LastName);
         }
 
-
         public void BmiStatus()
         {
-
             if (Bmi < 18)
             {
                 Console.WriteLine("YOU ARE UNDERWEIGHT AS YOUR BMI IS BELOW 18");
@@ -57,8 +53,7 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
                 Console.WriteLine("YOU ARE IN THE CATORGRY OF EXTREMALLY OBEASE ABOVE 35 IS WORRING");
             }
         }
-
-       
+      
         public void TempratureStatus()
         {
             if(Temprature < 94)

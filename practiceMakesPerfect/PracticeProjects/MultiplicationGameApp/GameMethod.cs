@@ -78,12 +78,13 @@ namespace practiceMakesPerfect.PracticeProjects.MultiplicationGameApp
             }
             Console.Clear();
             Console.WriteLine($"YOU SCORED {_finalScore} OUT OF 10 " + "\n" + "THANK YOU FOR TAKING PART");
-
-
         }
-       
-
-        
-
     }
 }
+
+           /*      
+           Sums newSums = new Sums();
+           Answers newAnswers = new Answers();
+           GameMethod newGameMethod = new GameMethod();
+           newGameMethod.TheGame();
+           */

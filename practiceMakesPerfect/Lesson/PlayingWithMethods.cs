@@ -35,7 +35,10 @@ namespace practiceMakesPerfect.Lesson
             Console.WriteLine();
         }
 
-
+        public int Numbers(int firstNumber, int secondNumber)
+        {
+            return firstNumber + secondNumber;
+        }
 
     }
 

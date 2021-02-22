@@ -1,0 +1,84 @@
+﻿using System;
+namespace practiceMakesPerfect.Lesson
+{
+ public class C_Loops
+ {
+       
+          **************************************************
+          ***                  FOR Loop                  ***
+          **************************************************
+          for (int i = 0; i <= 10; i++)
+          {
+
+              Console.WriteLine(i);
+          }
+          1. THE FOR IS THE LOOP
+          2. THE BRACKET IS THE CONTAINER
+          3. INT IS THE data type WE ARE USING
+          4. WE ARE STORING THAT i = 0, i IS A INT
+          5. THE ; SIGN INDICATES WE HAVE FINISHED STORING
+          6. WE ARE THEN SAYING THAT IF i IS LESS THEN OR EQUALS TO 10
+          7. THE ; SIGN FINISHES THE IF i IS LESS THEN OR EQUALS STATEMENT
+          8. i WILL THEN TURN TO i++ WHICH MEANS i IS NOW 1 AND NOT ZERO
+          9. THE NEXT TIME IT GOES ROUND THE LOOP i WILL NOW START AT 1
+         10. WHEN IT GETS TO THE END BECAUSE ITS STILL LESS AND NOT EQAUL TO 10
+             i WHICH IS NOW 1 WILL BECOME ++ WHICH TURNS THE 1 INTO A 2
+         11. THIS LOOP WILL CONTINUE TO GO AROUND UNTIL i IS = TO 10 THEN IT WILL BREAK
+         12. THIS CODE WILL PRINT OUT 1 - 10
+          
+        
+        ******************************************************
+        ***                 While Loop                     ***
+        ******************************************************           
+        int i = 0;
+        while(i < 5)
+        {
+            Console.WriteLine(i++);
+
+        }
+        1. WE DECLARE THAT i = 0 AND WE STORE IT AS A INT
+        2. While IS THE NAME OF THE LOOP
+        3. THE BRACKETS ARE FOR OUR STATEMENT
+        4. OUR STATEMENT IS WHILE i WHICH IS ZERO IS LESS THEN 5
+           KEEP GOING ROUND IN THE LOOP UNTIL CONDITION MET
+        5. THE ++ ON THE END OF THE i IN COMSOLE WRITELINE STANDS FOR PLUS 1
+        6. SO IF i WAS 0 AND ++ ADDS 1 OUR i NOW EQUALS 1
+        7. THIS WILL BE REPEATED UNTIL i EQUALS 5
+        8. WHEN THE i IS EQUAL TO 5 THE LOOP WILL BREAK AS IT IS NO LONGER
+           LESS THEN 5
+         
+
+        ******************************************************
+        ***                FOReach Loop                    ***
+        ******************************************************           
+        string[] names = new string[3];
+        {
+            names[0] = "peter";
+            names[1] = "paul";
+            names[2] = "john";
+        }
+        foreach (var name in names )
+        {
+            Console.WriteLine(name);
+        }
+
+        1. STRING IS THE DATA TYPE WE ARE USING
+        2. [] THIS IS DECLARING AN ARRAY,
+        3. THE NAME WE ARE GIVING THE ARRAY IS NAMES
+        4. THE EQUALS SIGN IS TELLING US EXACTLY THAT,
+        5. THEN WE ARE SAYING THAT THE NAMES IN THE ARRAY IS
+           A NEW STRING
+        6. [3] THE 3 IS TELLING US THAT WE WANT 3 NAMES STORED
+           IN OUR ARRAY
+        7. THIS IS FINISHED WITH A SEMI COLON WHICH IS A C# FULLSTOP
+        8. NOW WE HAVE SET OUR ARRAY WE NEED TO USE IT
+        9. A FOREACH LOOP IS THE BEST WAY TO LOOP THROUGH AN ARRAY
+       10. FOREACH IS THE NAME OF LOOP WITH THE () BRACKETS
+       11. INSIDE THE BRACKETS WE TELL THE LOOP WHAT WE NEED IT TO DO
+       12. THE VAR IS THE DATA TYPE WE WANT TO USE
+       13. THEN WE ARE SAYING THAT WE WANT A NAME IN THE ARRAY WE CALLED NAMES
+       14. WE ARE BASICALLY SAYING WE WANT A NAME IN THE NAMES ARRY
+       15. WITH NAME IN THE CONSOLE.WRITELINE WE WILL PRINT NAME FROM THE NAMES ARRAY
+        
+ }
+}

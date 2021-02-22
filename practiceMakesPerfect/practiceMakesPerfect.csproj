@@ -9,5 +9,6 @@
     <Folder Include="Lesson\" />
     <Folder Include="PracticeProjects\" />
     <Folder Include="PracticeProjects\DoctorsApp\" />
+    <Folder Include="PracticeProjects\MultiplicationGameApp\" />
   </ItemGroup>
 </Project>
