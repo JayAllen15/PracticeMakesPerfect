@@ -3,12 +3,12 @@ namespace practiceMakesPerfect.PracticeProjects.DoctorsApp
 {
     public class Doctors
     {
-        public Doctors(string firstName, string lastName, string sex, int age)
+        public Doctors()
         {
-            FirstName = firstName;
-            LastName = lastName;
-            Sex = sex;
-            Age = age;
+            //FirstName = firstName;
+            //LastName = lastName;
+            //Sex = sex;
+            //Age = age;
         }
         public string FirstName { get; set; }
         public string LastName { get; set; }

@@ -54,7 +54,7 @@ namespace practiceMakesPerfect.Lesson
        REMAINDER:          -  EXAMPLE: Console.WriteLine(100% 29) WOULD PRINT 13, WE CHOOSE A PERCENTAGE THEN WE ADD A NUMBER
                               THEN WE ADD THE NUMBER THAT WE WANT TO USE, FROM THE EXAMPLE 29 WILL GO INTO 100% 3 TIMES BUT
                               WILL LEAVE A REMAINDER OF 13, 29 X 3 = 87 LEAVING A REMAINDER OF 13 THAT WILL BE PRINTED.
-                              THIS METHOD IS JUST TRYING TO FIND OUT WHAT IS LEFT OVER.
+                              THIS METHOD IS JUST TRYING TO FIND OUT WHAT IS LEFT OVER. THE % SIGN MEANS REMAINDER
 
        CLASSES             -  A CLASS IS SOMEWHERE WE USE TO MAKE FIELDS PROPERTIES AND METHODS,WE CAN HAVE HUNDREDS OF DIFFERNET CLASS NAMES
                               THAT ARE DOING DIFFERENT THINGS,OBJECTS ARE THE COPY OF THE BLUEPRINT OR TEMPLATE OF A CLASS THAT HOLD DIFFERENT
@@ -156,7 +156,24 @@ CONSTRUCTOR OVERLOADING    -  CONSTRUCTOR OVERLOADING IS WHEN WE HAVE A METHOD W
                                - LS = GIVES US A LIST OF ITEMS/FILES THAT ARE STORED IN THAT PART OF THE SYSTEM                         
                                - CD SPACE DOT DOT(CD ..) ALLOWS US TO MOVE BACK
 
+      TERNARY STATEMENT     -      Console.WriteLine("What day is it?");
+                                   string day = Console.ReadLine();
 
+                                   string howToSpendTheDay = day.ToLower().Equals("saturday") ?"Relax" :"Work";
+
+                                   Console.WriteLine($"{howToSpendTheDay} on {day}");
+
+                                   //if statement version
+                                   if (day.ToLower().Equals("saturday"))
+                                   {
+                                   howToSpendTheDay = "Relax (if statement version)";
+                                   Console.WriteLine($"{howToSpendTheDay} on {day}");
+                                   }
+                                   else
+                                   {
+                                   howToSpendTheDay = "Work (if statement version)";
+                                   Console.WriteLine($"{howToSpendTheDay} on {day}");
+                                   }
 
 
  }

@@ -10,5 +10,7 @@
     <Folder Include="PracticeProjects\" />
     <Folder Include="PracticeProjects\DoctorsApp\" />
     <Folder Include="PracticeProjects\MultiplicationGameApp\" />
+    <Folder Include="PracticeProjects\QuestionaireApp\" />
+    <Folder Include="PracticeProjects\Challenges\" />
   </ItemGroup>
 </Project>
