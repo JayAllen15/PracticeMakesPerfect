@@ -156,24 +156,43 @@ CONSTRUCTOR OVERLOADING    -  CONSTRUCTOR OVERLOADING IS WHEN WE HAVE A METHOD W
                                - LS = GIVES US A LIST OF ITEMS/FILES THAT ARE STORED IN THAT PART OF THE SYSTEM                         
                                - CD SPACE DOT DOT(CD ..) ALLOWS US TO MOVE BACK
 
-      TERNARY STATEMENT     -      Console.WriteLine("What day is it?");
+      TERNARY STATEMENT     -  TERNARY OPERATOR IS A SIMPLE WAY TO WRITE A IF STATEMENT IN ONE LINE, ? : ;
+                               FIRST YOU SET A BOOL EXPRESSION OR METHOD THEN A QUESTION MARK ?THEN YOU SAY WHAT YOU WANT TO HAPPEN IF ITS TRUE
+                               THEN COMES : FOLLOWED BY WHAT YOU WANT IF ITS NOT TRUE, A TERNARY STATEMENT IS USED WHEN WE ARE PICKING BETWEEN
+                               TWO THINGS ONLY, WE CAN USE A TERNARY STATEMENT INSIDE A IF STATEMENT INSTEAD OF USING A IF INSIDE A IF.
+                                   Console.WriteLine("What day is it?");
                                    string day = Console.ReadLine();
-
                                    string howToSpendTheDay = day.ToLower().Equals("saturday") ?"Relax" :"Work";
-
-                                   Console.WriteLine($"{howToSpendTheDay} on {day}");
-
-                                   //if statement version
-                                   if (day.ToLower().Equals("saturday"))
+                                   if version
+                                   if (day.ToLower().Equals("saturday") )
                                    {
-                                   howToSpendTheDay = "Relax (if statement version)";
-                                   Console.WriteLine($"{howToSpendTheDay} on {day}");
+                                     string howToSendTheDay = "Relax";
                                    }
                                    else
                                    {
-                                   howToSpendTheDay = "Work (if statement version)";
-                                   Console.WriteLine($"{howToSpendTheDay} on {day}");
+                                     string howToSendTheDay = "Work";
                                    }
+
+     ACCESS MODIFIERS       -  THERE ARE 6 DIFFERENT TYPES OF ACCESS MODIFIERS TO HELP US PROTECT OUR CODE AND IT ALSO HELPS US REDUCE
+                               THE CHANCES OF BRINGING BUGS INTO OUR APPLICATIONS,THEY ALSO MAKE OUR CODE LESS CONFUSING AND PROVIDE US
+                               WITH JUST WHAT WE NEED TO DO OUR JOB WITHOUT NOTHING EXTRA.
+                               - PUBLIC = IS ACCESSABLE EVERYWHERE INSIDE AND OUTSIDE ASSEMBLY,
+                                 THIS ALLOWS US TO CALL THAT MEMBER FOR DIFFERENT PROJECTS.
+                               - PRIVATE = ONLY ACCESSABLE IN THE AREA IT WAS DECLARED IN OR ONLY IN THE CLASS IT WAS DECLARED
+                                 IF IT IS CALLED FROM OUTSIDE THE CLASS IT WAS DECLARED THERE WILL BE NO OPTION FOR US TO USE IT
+                               - INTERNAL = ABIT BROADER THEN THE PRIVATE IN SCOPE,
+                                 INTERNAL CAN BE ACCESSED FROM ANYWHERE IN AN ASSEMBLY AND CAN BE USED FOR HELPER METHODS
+                                 WHERE WE WANT TO ACCESS IN DIFFERENT CLASSES BUT DONT WANT IT ACCESSED FROM OUTSIDE THE ASSEMBL
+                               - PROTECTED = USED ALOT IN INHERITANCE,ALLOWS US TO ACCESS IN THE CLASS IT WAS DECLARED IN
+                                 OR ANYOTHER CLASS THAT HAS BEEN INHERITED FROM THAT SAME CLASS,HELPFUL WHEN WE ARE BUILDING A PROJECT
+                                 THAT WE NEED HELPER METHODS BUT STILL UNACCESSABLE OUTSIDE OF THE INHERITED CLASSES.
+                               - PRIVATE PROTECTED = ACCESSABLE IN THE CLASS IT WAS DECLARED,ITS PRIVATE OUTSIDE THE ASSEMBLY
+                                 BUT PROTECTED INSIDE THE ASSEMBLY SO WE CAN ACCESS FROM INHERITED CLASSES FROM INSIDE THE ASSEMBLY
+                                 BECAUSE PROTECTED MEANS THEY CAN BE USED ONLY IN INHERITED CLASSES BUT IF WE TRIED TO USE OUTSIDE OF
+                                 THE ASSEMBLY THEY WOULD BE PRIVATE AND PRIVATE CAN ONLY BE ACCESSED IN THE CLASS IT WAS DECLARED  
+                               - PROTECTED INTERNAL = CAN BE ACCESSED FROM A DIFFERENT CLASS IN THE SAME ASSEMBLY AND ALSO OUTSIDE
+                                 OF THE ASSEMBLY IF THE CLASS YOU ARE CALLING IT FROM HAS BEEN INHERITED, SO ITS PROTECTED INSIDE
+                                 THE ASSEMBLY BUT INTERNAL OUTSIDE ASSEMBLY IN INHERITED CLASSES   
 
 
  }
